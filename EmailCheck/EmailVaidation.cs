@@ -7,7 +7,7 @@ namespace EmailCheck
 {
     class EmailVaidation
     {
-        public static string REGEX_EMAIL = "^(abc)@[a-z]";
+        public static string REGEX_EMAIL = "^[a-zA-Z0-9]+[@][a-zA-Z0-9]+";
         public bool validateEmail(string email)
         {
             return Regex.IsMatch(email, REGEX_EMAIL);
